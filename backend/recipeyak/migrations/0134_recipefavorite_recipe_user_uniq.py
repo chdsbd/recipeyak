@@ -12,7 +12,9 @@ class Migration(migrations.Migration):
         migrations.AddConstraint(
             model_name="recipefavorite",
             constraint=models.UniqueConstraint(
-                fields=("recipe", "user"), name="recipe_user_uniq"
+                fields=("recipe", "user"),
+                # edit
+                name="recipe_user_uniq",
             ),
         ),
     ]
